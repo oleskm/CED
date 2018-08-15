@@ -11,6 +11,10 @@ To apply the patch, change the buildType with id = 'Temp1_TempConfig1'
 accordingly, and delete the patch script.
 */
 changeBuildType(RelativeId("Temp1_TempConfig1")) {
+    vcs {
+        add(DslContext.settingsRoot.id!!)
+    }
+
     expectSteps {
         script {
             scriptContent = "qeqwe"
