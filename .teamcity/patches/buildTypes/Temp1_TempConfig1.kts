@@ -12,6 +12,7 @@ accordingly, and delete the patch script.
 */
 changeBuildType(RelativeId("Temp1_TempConfig1")) {
     vcs {
+        remove(RelativeId("Temp1_Git1"))
         add(DslContext.settingsRoot.id!!)
     }
 
